@@ -1,0 +1,985 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Mauricio Robbins | American Formula Driver</title>
+<meta name="description" content="Rising multicultural American formula driver Mauricio Robbins is racing in the 2026 Formula Pro USA Championship with Kiwi Motorsport. Partner before the breakout.">
+<meta property="og:title" content="Mauricio Robbins | The Next Generation of American Motorsport">
+<meta property="og:description" content="American formula driver with Kiwi Motorsport. 2026 FPUSA Championship. Partner before the breakout.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://static.wixstatic.com/media/bcaa19_56dda90bbfd94fd8a5b3f5be44cd0fad~mv2.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#000000">
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+<meta name="author" content="Mauricio Robbins Racing">
+<meta name="format-detection" content="telephone=no">
+<link rel="canonical" href="https://mauriciorobbins.com/">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://static.wixstatic.com" crossorigin>
+<link rel="preload" as="image" href="https://static.wixstatic.com/media/bcaa19_56dda90bbfd94fd8a5b3f5be44cd0fad~mv2.jpg" fetchpriority="high">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap">
+
+<style>
+/* ============================================================
+   DESIGN TOKENS
+   ============================================================ */
+:root{
+  --black:#000000;
+  --graphite:#1A1A1A;
+  --surface:#242424;
+  --surface-2:#2A2A2A;
+  --border:#2E2E2E;
+  --border-soft:#1F1F1F;
+  --accent:#D2FF00;
+  --accent-hover:#BFEC00;
+  --accent-dim:rgba(210,255,0,.14);
+  --text:#FFFFFF;
+  --text-soft:#D5D5D8;
+  --muted:#8A8A8E;
+  --display:'Bebas Neue','Impact','Arial Narrow',sans-serif;
+  --body:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+  --mono:'JetBrains Mono','SF Mono',Consolas,monospace;
+  --container:1320px;
+  --header-h:74px;
+  --ease:cubic-bezier(.2,.7,.2,1);
+  --radius:10px;
+  --radius-lg:14px;
+}
+
+/* ============================================================
+   RESET + BASE
+   ============================================================ */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:90px}
+html,body{background:var(--black);color:var(--text);font-family:var(--body);font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;overflow-x:hidden}
+img{max-width:100%;display:block;height:auto}
+a{color:inherit;text-decoration:none}
+button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:2px}
+.container{max-width:var(--container);margin:0 auto;padding:0 clamp(20px,4vw,48px);width:100%}
+.skip{position:absolute;left:-9999px;top:0;background:var(--accent);color:#000;padding:12px 18px;font-weight:600;z-index:200}
+.skip:focus{left:16px;top:16px}
+
+.bg-black{background:var(--black)}
+.bg-graphite{background:var(--graphite)}
+
+section{padding:clamp(80px,9vw,120px) 0;position:relative}
+section.tight{padding:clamp(56px,7vw,80px) 0}
+section.emotional{padding:clamp(110px,13vw,160px) 0}
+
+.eyebrow{font-family:var(--mono);font-size:11px;letter-spacing:3px;color:var(--accent);text-transform:uppercase;margin-bottom:22px;display:inline-flex;align-items:center;gap:14px}
+.eyebrow::before{content:'';width:32px;height:1px;background:var(--accent)}
+.sec-title{font-family:var(--display);font-size:clamp(40px,6vw,84px);line-height:.96;letter-spacing:1px;text-transform:uppercase;font-weight:400;margin-bottom:26px;color:var(--text)}
+.sec-title .accent{color:var(--accent)}
+.sec-lead{font-size:clamp(16px,1.18vw,18px);line-height:1.7;color:var(--text-soft);max-width:640px}
+.sec-lead strong{color:var(--text);font-weight:600}
+.sec-lead+.sec-lead{margin-top:18px}
+
+/* Placeholder markers (subtle) */
+.placeholder{position:relative}
+.placeholder-text{font-style:italic;color:var(--muted);opacity:.7}
+.placeholder-tag{position:absolute;top:10px;right:10px;font-family:var(--mono);font-size:8px;letter-spacing:1.5px;color:#000;background:var(--accent);padding:3px 7px;border-radius:3px;text-transform:uppercase;z-index:5;pointer-events:none}
+
+/* Fade-in on scroll (premium animation) */
+.fade-up{opacity:0;transform:translateY(28px);transition:opacity .9s var(--ease),transform .9s var(--ease)}
+.fade-up.in-view{opacity:1;transform:none}
+.fade-up.d1{transition-delay:.08s}
+.fade-up.d2{transition-delay:.16s}
+.fade-up.d3{transition-delay:.24s}
+
+/* ============================================================
+   HEADER — solid black, white text
+   ============================================================ */
+header{position:fixed;top:0;left:0;right:0;z-index:100;height:var(--header-h);display:flex;align-items:center;background:var(--black);border-bottom:1px solid var(--border-soft)}
+header .container{display:flex;align-items:center;justify-content:space-between;gap:24px}
+.brand{font-family:var(--display);font-size:22px;letter-spacing:4px;color:#fff;display:flex;align-items:center;gap:10px}
+.brand .dot{width:8px;height:8px;background:var(--accent);border-radius:50%;display:inline-block;box-shadow:0 0 12px var(--accent)}
+nav ul{display:flex;gap:36px;list-style:none}
+nav a{font-size:12px;font-weight:500;letter-spacing:1.6px;text-transform:uppercase;color:#fff;transition:color .2s var(--ease);position:relative;padding:6px 0}
+nav a:hover{color:var(--accent)}
+nav a::after{content:'';position:absolute;bottom:0;left:0;width:0;height:1px;background:var(--accent);transition:width .25s var(--ease)}
+nav a:hover::after{width:100%}
+.menu-toggle{display:none;width:38px;height:38px;align-items:center;justify-content:center;border:1px solid var(--border);border-radius:6px;color:#fff}
+.menu-toggle span{display:block;width:18px;height:1.5px;background:#fff;position:relative}
+.menu-toggle span::before,.menu-toggle span::after{content:'';position:absolute;left:0;width:100%;height:1.5px;background:#fff}
+.menu-toggle span::before{top:-6px}
+.menu-toggle span::after{top:6px}
+
+/* ============================================================
+   BUTTONS — clean, subtle hover
+   ============================================================ */
+.cta-row{display:flex;flex-wrap:wrap;gap:14px;margin-top:38px}
+.btn{display:inline-flex;align-items:center;gap:10px;font-family:var(--body);font-size:13px;font-weight:600;padding:15px 26px;border-radius:6px;letter-spacing:1.2px;text-transform:uppercase;transition:background .25s var(--ease),color .25s var(--ease),border-color .25s var(--ease);border:1px solid transparent;cursor:pointer;white-space:nowrap}
+.btn-primary{background:var(--accent);color:#000}
+.btn-primary:hover{background:var(--accent-hover)}
+.btn-secondary{background:transparent;color:#fff;border-color:#3a3a3a}
+.btn-secondary:hover{border-color:var(--accent);color:var(--accent)}
+.btn .arrow{transition:transform .25s var(--ease)}
+.btn:hover .arrow{transform:translateX(3px)}
+
+/* ============================================================
+   HERO — split 50/50, no overlay
+   ============================================================ */
+.hero{background:var(--black);padding-top:calc(var(--header-h) + 80px);padding-bottom:90px}
+.hero-grid{display:grid;grid-template-columns:1fr;gap:48px;align-items:center}
+.hero-text h1{font-family:var(--display);font-size:clamp(52px,7.5vw,124px);line-height:.92;letter-spacing:.5px;text-transform:uppercase;font-weight:400;margin-bottom:26px}
+.hero-text h1 .accent-line{display:block;color:var(--accent)}
+.hero-lead{font-size:clamp(16px,1.3vw,19px);max-width:560px;line-height:1.65;color:var(--text-soft)}
+.hero-lead strong{color:var(--text);font-weight:600}
+.hero-meta-line{font-family:var(--mono);font-size:11px;letter-spacing:2px;color:var(--accent);text-transform:uppercase;margin-top:32px;display:inline-flex;align-items:center;gap:12px;padding:10px 14px;border:1px solid var(--accent-dim);border-radius:30px}
+.hero-meta-line .pulse{width:6px;height:6px;background:var(--accent);border-radius:50%;animation:pulse 2s ease-in-out infinite;box-shadow:0 0 8px var(--accent);flex-shrink:0}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.35}}
+.hero-photo{border-radius:var(--radius-lg);overflow:hidden;background:var(--graphite);aspect-ratio:4/5;border:1px solid var(--border-soft)}
+.hero-photo img{width:100%;height:100%;object-fit:cover;object-position:center 30%}
+@media(min-width:900px){
+  .hero-grid{grid-template-columns:1.1fr 1fr;gap:80px}
+  .hero-photo{aspect-ratio:5/6;max-height:680px}
+}
+
+/* ============================================================
+   SEASON STRIP (2026 FPUSA + Kiwi handle)
+   ============================================================ */
+.season{background:var(--graphite);border-top:1px solid var(--border-soft);border-bottom:1px solid var(--border-soft);padding:36px 0}
+.season .container{display:flex;align-items:center;justify-content:center;text-align:center;flex-wrap:wrap;gap:14px}
+.season-text{font-family:var(--mono);font-size:clamp(12px,1.1vw,14px);letter-spacing:1.5px;color:#fff;text-transform:uppercase;line-height:1.6;max-width:880px}
+.season-text .label{color:var(--accent);margin-right:14px;letter-spacing:2.5px;font-weight:500}
+.season-text .handle{color:var(--accent);font-weight:600;transition:opacity .2s}
+.season-text .handle:hover{opacity:.75;text-decoration:underline}
+
+/* ============================================================
+   TRUST STRIP
+   ============================================================ */
+.trust{background:var(--black);padding:60px 0 64px;border-bottom:1px solid var(--border-soft)}
+.trust-label{text-align:center;font-family:var(--mono);font-size:10px;letter-spacing:3px;color:var(--muted);text-transform:uppercase;margin-bottom:32px}
+.trust-label::before,.trust-label::after{content:'';display:inline-block;width:32px;height:1px;background:var(--border);vertical-align:middle;margin:0 14px}
+.logo-strip{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:clamp(24px,4vw,60px);max-width:1100px;margin:0 auto}
+.logo-placeholder{display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;color:#aab0b8;opacity:.55;transition:opacity .25s var(--ease),color .25s var(--ease);min-width:110px;padding:8px 14px}
+.logo-placeholder:hover{opacity:1;color:#fff}
+.logo-placeholder strong{font-family:var(--display);font-size:22px;letter-spacing:2px;line-height:1;display:block}
+.logo-placeholder span{font-family:var(--mono);font-size:9px;letter-spacing:1.8px;color:currentColor;text-transform:uppercase;margin-top:5px;opacity:.8}
+
+/* ============================================================
+   NUMBERS
+   ============================================================ */
+.numbers{background:var(--graphite)}
+.numbers-head{text-align:center;margin-bottom:60px}
+.numbers-head .eyebrow{margin-left:auto;margin-right:auto}
+.numbers-head .sec-lead{margin:0 auto;text-align:center}
+.numbers-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+@media(min-width:880px){.numbers-grid{grid-template-columns:repeat(4,1fr)}}
+.num-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:34px 26px;text-align:left;position:relative;overflow:hidden;transition:border-color .3s var(--ease)}
+.num-card:hover{border-color:var(--accent-dim)}
+.num-card::before{content:'';position:absolute;top:0;left:0;width:3px;height:0;background:var(--accent);transition:height .35s var(--ease)}
+.num-card:hover::before{height:100%}
+.num-val{font-family:var(--display);font-size:clamp(56px,7vw,80px);line-height:1;color:#fff;letter-spacing:1px;display:flex;align-items:flex-end;gap:6px}
+.num-val .suffix{font-family:var(--mono);font-size:14px;color:var(--accent);letter-spacing:2px;padding-bottom:14px;text-transform:uppercase;font-weight:500}
+.num-val.pending{color:var(--muted);font-style:italic;opacity:.6}
+.num-label{font-family:var(--mono);font-size:10.5px;letter-spacing:2px;color:#fff;text-transform:uppercase;margin-top:14px;line-height:1.5;font-weight:500}
+.num-source{font-family:var(--mono);font-size:9px;letter-spacing:1.5px;color:var(--muted);margin-top:6px;text-transform:uppercase}
+
+/* ============================================================
+   SPLIT LAYOUTS (50/50, no overlay)
+   ============================================================ */
+.split{display:grid;grid-template-columns:1fr;gap:48px;align-items:center}
+.split-media{position:relative;border-radius:var(--radius-lg);overflow:hidden;aspect-ratio:4/5;background:var(--graphite);border:1px solid var(--border-soft)}
+.split-media img{width:100%;height:100%;object-fit:cover}
+.split-text{max-width:560px}
+@media(min-width:900px){
+  .split{grid-template-columns:1fr 1fr;gap:72px}
+  .split.reverse .split-text{order:-1}
+  .split-media{aspect-ratio:5/6;max-height:620px}
+}
+
+/* Sonoma split — text+card stacked on one side */
+.proof-grid{display:grid;grid-template-columns:1fr;gap:48px;align-items:center}
+.proof-media{position:relative;border-radius:var(--radius-lg);overflow:hidden;aspect-ratio:4/5;background:var(--graphite);border:1px solid var(--border-soft)}
+.proof-media img{width:100%;height:100%;object-fit:cover}
+.proof-content{display:flex;flex-direction:column;gap:30px;max-width:580px}
+@media(min-width:900px){
+  .proof-grid{grid-template-columns:1fr 1fr;gap:72px}
+  .proof-media{aspect-ratio:5/6;max-height:620px}
+}
+
+/* Cinematic divider — pure image strip, contained */
+.cinematic-divider{padding:0;background:var(--black)}
+.cinematic-divider .container{padding-top:48px;padding-bottom:48px}
+.cinematic-divider-img{position:relative;height:clamp(220px,26vw,360px);overflow:hidden;border-radius:var(--radius-lg);border:1px solid var(--border-soft)}
+.cinematic-divider-img img{width:100%;height:100%;object-fit:cover;object-position:center 35%}
+
+/* Section banner image (no overlay text) */
+.section-banner{margin:0 0 56px;border-radius:var(--radius-lg);overflow:hidden;aspect-ratio:21/9;background:var(--graphite);border:1px solid var(--border-soft)}
+.section-banner img{width:100%;height:100%;object-fit:cover}
+@media(max-width:700px){.section-banner{aspect-ratio:16/10;margin-bottom:40px}}
+
+/* ============================================================
+   PULL QUOTE
+   ============================================================ */
+.pullquote{margin:40px 0 0;padding:26px 0 0;border-top:1px solid var(--border);position:relative}
+.pullquote::before{content:'\201C';position:absolute;top:-12px;left:-2px;font-family:var(--display);font-size:72px;color:var(--accent);line-height:1}
+.pullquote q{font-family:var(--display);font-size:clamp(22px,2.4vw,30px);letter-spacing:.5px;line-height:1.25;color:#fff;font-weight:400;quotes:none;display:block;padding-left:46px}
+.pullquote q::before,.pullquote q::after{content:''}
+.pullquote-attr{margin-top:16px;padding-left:46px;font-family:var(--mono);font-size:11px;letter-spacing:2px;color:var(--muted);text-transform:uppercase}
+.pullquote-attr strong{color:var(--accent);font-weight:500}
+
+/* ============================================================
+   INDEPENDENT DRIVER (split)
+   ============================================================ */
+.independent{background:var(--graphite)}
+
+/* ============================================================
+   PODIUM PROOF
+   ============================================================ */
+.proof{background:var(--graphite)}
+.result-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:34px;position:relative;overflow:hidden}
+.result-card::before{content:'';position:absolute;top:0;left:0;width:3px;height:100%;background:var(--accent)}
+.result-card .rc-tag{font-family:var(--mono);font-size:10px;letter-spacing:2.5px;color:var(--accent);text-transform:uppercase;margin-bottom:14px}
+.result-card .rc-pos{font-family:var(--display);font-size:88px;line-height:1;color:#fff;letter-spacing:2px}
+.result-card .rc-pos sup{font-size:28px;color:var(--accent);vertical-align:top;margin-left:4px;font-family:var(--mono);letter-spacing:1px;font-weight:500;top:.2em;position:relative}
+.result-card .rc-sub{font-family:var(--mono);font-size:12px;color:var(--muted);letter-spacing:1.5px;margin-top:8px;text-transform:uppercase}
+.result-meta{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:30px;padding-top:24px;border-top:1px solid var(--border)}
+.result-meta dt{font-family:var(--mono);font-size:10px;letter-spacing:1.8px;color:var(--muted);text-transform:uppercase;margin-bottom:6px}
+.result-meta dd{font-size:14px;color:#fff;font-weight:500}
+
+/* ============================================================
+   LADDER
+   ============================================================ */
+.ladder{background:var(--black);text-align:center}
+.ladder .eyebrow{justify-content:center}
+.ladder .sec-title{margin-bottom:20px}
+.ladder .sec-lead{margin:0 auto 64px;text-align:center}
+.timeline{position:relative;margin:0 auto;max-width:1180px;padding:0 20px}
+.timeline-track{display:grid;grid-template-columns:repeat(6,1fr);gap:16px;position:relative}
+.timeline-track::before{content:'';position:absolute;top:14px;left:5%;right:5%;height:1px;background:linear-gradient(to right,var(--accent) 0%,var(--accent) 25%,var(--accent-dim) 28%,var(--border) 35%,var(--border) 100%);z-index:0}
+.node{position:relative;z-index:1;display:flex;flex-direction:column;align-items:center;text-align:center}
+.node-dot{width:30px;height:30px;border-radius:50%;background:var(--black);border:1px solid var(--border);display:flex;align-items:center;justify-content:center;margin-bottom:14px;transition:all .3s var(--ease)}
+.node-dot::after{content:'';width:8px;height:8px;background:var(--border);border-radius:50%}
+.node.current .node-dot{border-color:var(--accent);box-shadow:0 0 0 6px rgba(210,255,0,.12)}
+.node.current .node-dot::after{background:var(--accent);animation:pulse 2s ease-in-out infinite}
+.node.done .node-dot{border-color:var(--accent);background:var(--accent)}
+.node.done .node-dot::after{background:#000}
+.node-year{font-family:var(--mono);font-size:9.5px;letter-spacing:1.5px;color:var(--accent);margin-bottom:4px;text-transform:uppercase;opacity:.85}
+.node:not(.current):not(.done) .node-year{color:var(--muted);opacity:.5}
+.node-label{font-family:var(--mono);font-size:10px;letter-spacing:1.5px;color:var(--muted);text-transform:uppercase;line-height:1.4}
+.node.current .node-label,.node.done .node-label{color:#fff}
+.node-tag{font-family:var(--mono);font-size:9px;letter-spacing:2px;color:#000;background:var(--accent);padding:4px 8px;border-radius:30px;margin-top:8px;display:inline-block;font-weight:600}
+@media(max-width:800px){
+  .timeline-track{grid-template-columns:1fr;gap:0}
+  .timeline-track::before{display:none}
+  .node{flex-direction:row;align-items:center;gap:18px;text-align:left;padding:14px 0;border-bottom:1px solid var(--border)}
+  .node-dot{margin-bottom:0;flex-shrink:0}
+  .node-year{margin-bottom:0;margin-right:8px;flex-shrink:0;min-width:60px}
+}
+
+/* ============================================================
+   TESTIMONIALS
+   ============================================================ */
+.testimonials{background:var(--graphite)}
+.testimonials-head{margin-bottom:60px;max-width:780px}
+.tm-grid{display:grid;grid-template-columns:1fr;gap:18px}
+@media(min-width:900px){.tm-grid{grid-template-columns:repeat(3,1fr)}}
+.tm-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:32px;position:relative;transition:border-color .3s var(--ease);display:flex;flex-direction:column}
+.tm-card:hover{border-color:var(--accent-dim)}
+.tm-card .quote-mark{font-family:var(--display);font-size:56px;color:var(--accent);line-height:.8;margin-bottom:16px;display:block}
+.tm-card blockquote{font-size:15px;color:#fff;line-height:1.65;margin-bottom:24px;flex-grow:1}
+.tm-card cite{font-style:normal;display:block;padding-top:16px;border-top:1px solid var(--border)}
+.tm-card cite .name{font-weight:600;font-size:14px;color:#fff;display:block}
+.tm-card cite .role{font-family:var(--mono);font-size:10px;letter-spacing:1.5px;color:var(--muted);text-transform:uppercase;margin-top:4px;display:block}
+
+/* ============================================================
+   PARTNERS
+   ============================================================ */
+.partners{background:var(--black)}
+.partners-intro{max-width:780px;margin-bottom:60px}
+.benefit-grid{display:grid;grid-template-columns:1fr;gap:14px}
+.benefit{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:32px 28px;transition:border-color .3s var(--ease),background .3s var(--ease);position:relative;overflow:hidden}
+.benefit:hover{border-color:var(--accent-dim);background:var(--surface-2)}
+.benefit-icon{width:42px;height:42px;border-radius:8px;background:var(--accent-dim);display:flex;align-items:center;justify-content:center;margin-bottom:20px;color:var(--accent);transition:background .3s var(--ease),color .3s var(--ease)}
+.benefit-icon svg{width:22px;height:22px}
+.benefit:hover .benefit-icon{background:var(--accent);color:#000}
+.benefit-num{font-family:var(--mono);font-size:10px;letter-spacing:2px;color:var(--muted);text-transform:uppercase;margin-bottom:8px;display:block}
+.benefit h3{font-family:var(--display);font-size:24px;letter-spacing:1.2px;text-transform:uppercase;font-weight:400;margin-bottom:10px;color:#fff}
+.benefit p{font-size:14px;color:var(--muted);line-height:1.6}
+@media(min-width:680px){.benefit-grid{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:1100px){.benefit-grid{grid-template-columns:repeat(5,1fr)}}
+.partners .cta-row{margin-top:48px}
+
+/* ============================================================
+   ECOSYSTEM
+   ============================================================ */
+.ecosystem{background:var(--graphite)}
+.format-grid{display:grid;grid-template-columns:1fr;gap:0;margin-top:48px;border-top:1px solid var(--border)}
+.format{border-bottom:1px solid var(--border);padding:30px 4px;display:grid;grid-template-columns:auto 1fr auto auto;gap:24px;align-items:center;transition:padding .3s var(--ease),background .3s var(--ease)}
+.format:hover{padding-left:18px;padding-right:18px;background:rgba(210,255,0,.04)}
+.format-num{font-family:var(--mono);font-size:11px;color:var(--accent);letter-spacing:2px;min-width:40px}
+.format-name{font-family:var(--display);font-size:clamp(22px,2.2vw,30px);letter-spacing:1px;text-transform:uppercase;font-weight:400;color:#fff}
+.format-tag{font-family:var(--mono);font-size:10px;color:var(--muted);letter-spacing:1.5px;text-transform:uppercase}
+.format-status{font-family:var(--mono);font-size:9px;letter-spacing:1.5px;text-transform:uppercase;padding:5px 10px;border-radius:20px;border:1px solid var(--border);color:var(--muted)}
+.format-status.dev{border-color:var(--accent-dim);color:var(--accent)}
+@media(max-width:800px){
+  .format{grid-template-columns:auto 1fr;gap:14px}
+  .format-tag,.format-status{grid-column:1/-1;padding-left:54px;justify-self:start}
+}
+
+/* ============================================================
+   FINAL CTA + FORM (split, no bg image)
+   ============================================================ */
+.final{background:var(--black);border-top:1px solid var(--border-soft)}
+.final-grid{display:grid;grid-template-columns:1fr;gap:60px;max-width:1180px;margin:0 auto;align-items:center}
+@media(min-width:1000px){.final-grid{grid-template-columns:1fr 1fr;gap:80px}}
+.final-text .sec-title{font-size:clamp(48px,7.5vw,96px)}
+.final-text .sec-lead{font-size:clamp(16px,1.25vw,19px)}
+.final-text .cta-row{margin-top:36px}
+
+.inquiry-form{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-lg);padding:36px}
+.inquiry-form h3{font-family:var(--display);font-size:30px;letter-spacing:1.5px;text-transform:uppercase;font-weight:400;margin-bottom:8px;color:#fff}
+.inquiry-form .form-hint{font-family:var(--mono);font-size:10px;letter-spacing:1.8px;color:var(--accent);text-transform:uppercase;margin-bottom:26px}
+.form-row{display:grid;grid-template-columns:1fr;gap:14px;margin-bottom:14px}
+@media(min-width:600px){.form-row.two{grid-template-columns:1fr 1fr}}
+.field{display:flex;flex-direction:column;gap:6px}
+.field label{font-family:var(--mono);font-size:10px;letter-spacing:1.8px;color:var(--muted);text-transform:uppercase}
+.field input,.field select,.field textarea{font-family:var(--body);font-size:14px;background:var(--black);color:#fff;border:1px solid var(--border);border-radius:6px;padding:13px 14px;transition:border-color .2s,box-shadow .2s;width:100%}
+.field input:focus,.field select:focus,.field textarea:focus{outline:none;border-color:var(--accent);box-shadow:0 0 0 3px rgba(210,255,0,.14)}
+.field textarea{resize:vertical;min-height:96px;font-family:var(--body)}
+.inquiry-form .btn{width:100%;justify-content:center;margin-top:8px}
+.form-note{font-family:var(--mono);font-size:9.5px;letter-spacing:1.3px;color:var(--muted);margin-top:16px;text-align:center;line-height:1.7}
+.form-note a{color:var(--accent)}
+
+/* ============================================================
+   MEDIA KIT
+   ============================================================ */
+.media{background:var(--graphite)}
+.media-grid{display:grid;grid-template-columns:1fr;gap:12px;margin-top:48px}
+.media-card{background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:22px;display:flex;align-items:center;justify-content:space-between;gap:14px;opacity:.55;cursor:not-allowed}
+.media-card .mc-label{display:flex;align-items:center;gap:14px}
+.media-card .mc-type{font-family:var(--mono);font-size:10px;letter-spacing:2px;color:var(--accent);background:var(--accent-dim);padding:5px 9px;border-radius:30px;text-transform:uppercase}
+.media-card .mc-name{font-weight:500;font-size:14px;color:#fff}
+.media-card .mc-status{font-family:var(--mono);font-size:9px;letter-spacing:1.5px;color:var(--muted);text-transform:uppercase;padding:5px 10px;border:1px dashed var(--border);border-radius:20px}
+@media(min-width:700px){.media-grid{grid-template-columns:repeat(2,1fr)}}
+
+/* ============================================================
+   FOOTER
+   ============================================================ */
+footer{background:var(--black);border-top:1px solid var(--border-soft);padding:64px 0 32px}
+.footer-grid{display:grid;grid-template-columns:1fr;gap:40px;margin-bottom:48px}
+@media(min-width:800px){.footer-grid{grid-template-columns:1.5fr 1fr 1fr}}
+.f-brand .brand{margin-bottom:18px}
+.f-brand p{color:var(--text-soft);font-size:14px;max-width:340px;line-height:1.7}
+.f-col h4{font-family:var(--mono);font-size:11px;letter-spacing:2px;color:var(--accent);text-transform:uppercase;margin-bottom:18px}
+.f-col ul{list-style:none}
+.f-col li{margin-bottom:10px}
+.f-col a{color:var(--text-soft);font-size:14px;transition:color .2s}
+.f-col a:hover{color:var(--accent)}
+.f-socials{display:flex;gap:10px;margin-top:20px}
+.f-socials a{width:40px;height:40px;display:flex;align-items:center;justify-content:center;border:1px solid var(--border);border-radius:50%;color:#fff;transition:color .25s var(--ease),border-color .25s var(--ease)}
+.f-socials a:hover{color:var(--accent);border-color:var(--accent)}
+.f-socials svg{width:16px;height:16px}
+.f-bottom{padding-top:32px;border-top:1px solid var(--border);display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap;font-family:var(--mono);font-size:11px;letter-spacing:1.5px;color:var(--muted);text-transform:uppercase}
+
+/* ============================================================
+   REDUCED MOTION + RESPONSIVE
+   ============================================================ */
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}
+  .fade-up{opacity:1;transform:none}
+}
+@media (max-width:900px){
+  nav ul{display:none}
+  .menu-toggle{display:flex}
+}
+@media (max-width:600px){
+  .cta-row{flex-direction:column;align-items:stretch}
+  .btn{justify-content:center}
+  .result-card .rc-pos{font-size:68px}
+  .result-meta{grid-template-columns:1fr}
+}
+</style>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://mauriciorobbins.com/#mauricio",
+      "name": "Mauricio Robbins",
+      "givenName": "Mauricio",
+      "familyName": "Robbins",
+      "description": "Rising multicultural American formula driver racing in the 2026 Formula Pro USA Championship (FPUSA-4) with Kiwi Motorsport. First full formula car season, with a podium at Sonoma Raceway on April 26, 2026.",
+      "url": "https://mauriciorobbins.com/",
+      "image": "https://static.wixstatic.com/media/bcaa19_56dda90bbfd94fd8a5b3f5be44cd0fad~mv2.jpg",
+      "jobTitle": "Formula 4-level racing driver",
+      "email": "marketing@mauriciorobbins.com",
+      "nationality": [
+        {"@type": "Country", "name": "United States"},
+        {"@type": "Country", "name": "Brazil"}
+      ],
+      "knowsAbout": ["Formula 4 racing", "Open-wheel motorsport", "Race engineering", "Ligier JS-F4"],
+      "memberOf": {
+        "@type": "SportsTeam",
+        "name": "Kiwi Motorsport",
+        "sport": "Auto racing",
+        "sameAs": "https://www.instagram.com/kiwimotorsportnz/"
+      },
+      "alumniOf": [
+        {"@type": "EducationalOrganization", "name": "Allen Berg Advanced Racing School"},
+        {"@type": "EducationalOrganization", "name": "Lucas Oil Advanced Racing School"},
+        {"@type": "EducationalOrganization", "name": "Radford Racing School"}
+      ],
+      "sameAs": [
+        "https://www.instagram.com/mauriciorobbins_/",
+        "https://www.facebook.com/profile.php?id=61589331160721"
+      ]
+    },
+    {
+      "@type": "SportsEvent",
+      "@id": "https://mauriciorobbins.com/#sonoma-round-3",
+      "name": "Formula Pro USA Championship — Round 3, Sonoma",
+      "description": "FPUSA-4 race at Sonoma Raceway where Mauricio Robbins finished on the podium (P3).",
+      "startDate": "2026-04-26",
+      "endDate": "2026-04-26",
+      "eventStatus": "https://schema.org/EventScheduled",
+      "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+      "sport": "Auto racing",
+      "location": {
+        "@type": "Place",
+        "name": "Sonoma Raceway",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Sonoma",
+          "addressRegion": "CA",
+          "addressCountry": "US"
+        }
+      },
+      "competitor": {"@id": "https://mauriciorobbins.com/#mauricio"},
+      "organizer": {
+        "@type": "Organization",
+        "name": "Formula Pro USA",
+        "url": "https://formulaprousa.com"
+      }
+    },
+    {
+      "@type": "WebSite",
+      "url": "https://mauriciorobbins.com/",
+      "name": "Mauricio Robbins — American Formula Driver",
+      "description": "Official site of formula driver Mauricio Robbins. Partner before the breakout.",
+      "inLanguage": "en-US",
+      "publisher": {"@id": "https://mauriciorobbins.com/#mauricio"}
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<a href="#main" class="skip">Skip to content</a>
+
+<header role="banner">
+  <div class="container">
+    <a href="#" class="brand" aria-label="Mauricio Robbins home">
+      <span class="dot" aria-hidden="true"></span>
+      <span>M&middot;R</span>
+    </a>
+    <nav role="navigation" aria-label="Primary">
+      <ul>
+        <li><a href="#story">Story</a></li>
+        <li><a href="#proof">Proof</a></li>
+        <li><a href="#ladder">Ladder</a></li>
+        <li><a href="#partners">Partners</a></li>
+        <li><a href="#media">Media</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <button class="menu-toggle" aria-label="Open menu"><span></span></button>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ================ 1 · HERO (split 50/50, no overlay) ================ -->
+  <section class="hero" aria-label="Introduction">
+    <div class="container">
+      <div class="hero-grid">
+        <div class="hero-text fade-up">
+          <div class="eyebrow">Formula Pro USA &middot; Kiwi Motorsport &middot; 2026</div>
+          <h1>
+            The Next Generation of<br>
+            <span class="accent-line">American Motorsport</span>
+          </h1>
+          <p class="hero-lead">
+            <strong>Mauricio Robbins</strong> is a rising multicultural American formula driver building his path through the professional open-wheel ranks with discipline, data, and race-proven momentum.
+          </p>
+          <div class="cta-row">
+            <a href="#partners" class="btn btn-primary">Partner With Mauricio <span class="arrow" aria-hidden="true">&rarr;</span></a>
+            <a href="#story" class="btn btn-secondary">View the Journey</a>
+          </div>
+          <div class="hero-meta-line">
+            <span class="pulse" aria-hidden="true"></span>
+            <span>Latest result &middot; P3 &middot; Sonoma 2026</span>
+          </div>
+        </div>
+        <div class="hero-photo fade-up d1">
+          <img src="https://static.wixstatic.com/media/bcaa19_56dda90bbfd94fd8a5b3f5be44cd0fad~mv2.jpg" alt="Mauricio Robbins in his Bell carbon helmet" loading="eager" fetchpriority="high">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================ SEASON 2026 STRIP ================ -->
+  <aside class="season" aria-label="2026 Season">
+    <div class="container">
+      <p class="season-text">
+        <span class="label">2026 Season</span>
+        Mauricio is racing in the <strong>2026 Formula Pro USA (FPUSA) Championship</strong> with <a href="https://www.instagram.com/kiwimotorsportnz/" class="handle" target="_blank" rel="noopener">@kiwimotorsportnz</a>.
+      </p>
+    </div>
+  </aside>
+
+  <!-- ================ TRUST STRIP ================ -->
+  <section class="trust" aria-label="Backed by">
+    <div class="container">
+      <div class="trust-label fade-up">Backed by &middot; Trusted partners</div>
+      <!-- TODO: replace placeholder text logos with real .svg or .png when assets arrive -->
+      <div class="logo-strip fade-up d1">
+        <div class="logo-placeholder"><strong>McLaren</strong><span>Chicago</span></div>
+        <div class="logo-placeholder"><strong>Kiwi</strong><span>Motorsport</span></div>
+        <div class="logo-placeholder"><strong>Allen Berg</strong><span>Racing School</span></div>
+        <div class="logo-placeholder"><strong>Lucas Oil</strong><span>Advanced Racing</span></div>
+        <div class="logo-placeholder"><strong>Radford</strong><span>Racing School</span></div>
+        <div class="logo-placeholder"><strong>Formula Pro</strong><span>USA</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================ BY THE NUMBERS ================ -->
+  <section class="numbers" aria-label="By the Numbers">
+    <div class="container">
+      <div class="numbers-head">
+        <div class="eyebrow fade-up">By the Numbers</div>
+        <h2 class="sec-title fade-up d1">Early <span class="accent">Proof Points</span></h2>
+        <p class="sec-lead fade-up d2">A snapshot of the 2026 rookie campaign &mdash; concrete progress on a long road.</p>
+      </div>
+      <div class="numbers-grid">
+        <article class="num-card fade-up">
+          <div class="num-val">1<span class="suffix">x</span></div>
+          <div class="num-label">FPUSA-4 Podium</div>
+          <div class="num-source">Sonoma &middot; Round 3 &middot; 2026</div>
+        </article>
+        <article class="num-card fade-up d1">
+          <div class="num-val">4</div>
+          <div class="num-label">Races Completed</div>
+          <div class="num-source">FPUSA 2026 Season</div>
+        </article>
+        <article class="num-card fade-up d2">
+          <div class="num-val">3<span class="suffix">/3</span></div>
+          <div class="num-label">Racing Schools Completed</div>
+          <div class="num-source">Allen Berg &middot; Lucas Oil &middot; Radford</div>
+        </article>
+        <article class="num-card placeholder fade-up d3">
+          <div class="num-val pending">&mdash;</div>
+          <div class="num-label">Social Audience</div>
+          <div class="num-source">Instagram &middot; Facebook</div>
+          <span class="placeholder-tag" title="Awaiting follower export">TBD</span>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================ 2 · STORY (photo left, text right) ================ -->
+  <section class="story" id="story" aria-label="Built for the Climb">
+    <div class="container">
+      <div class="split">
+        <div class="split-media fade-up">
+          <img src="https://static.wixstatic.com/media/bcaa19_16ff41246278471dacf37641cd07ba2b~mv2.jpg" alt="Setup walkthrough with the Kiwi Motorsport engineering crew" loading="lazy" decoding="async">
+        </div>
+        <div class="split-text fade-up d1">
+          <div class="eyebrow">The Story</div>
+          <h2 class="sec-title">Built for the <span class="accent">Climb</span></h2>
+          <p class="sec-lead"><strong>Every driver's rise starts before the spotlight.</strong></p>
+          <p class="sec-lead">For Mauricio Robbins, the path is being built lap by lap &mdash; through testing, race weekends, engineering feedback, family commitment, and the pressure of adapting quickly to formula machinery.</p>
+          <p class="sec-lead">He is not chasing attention. He is building ability.</p>
+
+          <!-- TODO: replace placeholder with verified Mauricio quote -->
+          <div class="pullquote placeholder">
+            <span class="placeholder-tag">Awaiting quote</span>
+            <q><span class="placeholder-text">Driver quote to be supplied &mdash; one or two sentences in his own words about discipline, the work, or the climb.</span></q>
+            <div class="pullquote-attr"><strong>Mauricio Robbins</strong> &middot; FPUSA-4</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================ 3 · INDEPENDENT DRIVER (split, photo right) ================ -->
+  <section class="independent" aria-label="The Independent Driver">
+    <div class="container">
+      <div class="split reverse">
+        <div class="split-media fade-up d1">
+          <img src="https://static.wixstatic.com/media/bcaa19_a7cf6136ca8442718d1452253da32489~mv2.jpg" alt="Mauricio Robbins suiting up before the race" loading="lazy" decoding="async">
+        </div>
+        <div class="split-text fade-up">
+          <div class="eyebrow">The Independent Driver</div>
+          <h2 class="sec-title">A New Kind of <span class="accent">American</span> Motorsport Story</h2>
+          <p class="sec-lead">Mauricio represents a new kind of American motorsport story: <strong>independent, multicultural, ambitious,</strong> and built for a global audience.</p>
+          <p class="sec-lead">His journey is about more than racing. It is about <strong>discipline, representation, courage,</strong> and the belief that new voices can break into elite spaces.</p>
+          <p class="sec-lead">For partners, this is the rare moment to enter before the breakout.</p>
+          <div class="cta-row">
+            <a href="#partners" class="btn btn-primary">Own the Origin Story <span class="arrow" aria-hidden="true">&rarr;</span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================ CINEMATIC DIVIDER (contained image strip) ================ -->
+  <section class="cinematic-divider" aria-hidden="true">
+    <div class="container">
+      <div class="cinematic-divider-img fade-up">
+        <img src="https://static.wixstatic.com/media/bcaa19_c34299be896241f0ac286c36e1d21523~mv2.jpg" alt="" loading="lazy" decoding="async">
+      </div>
+    </div>
+  </section>
+
+  <!-- ================ 4 · PODIUM PROOF (split: photo / text+card) ================ -->
+  <section class="proof" id="proof" aria-label="Podium Proof">
+    <div class="container">
+      <div class="proof-grid">
+        <div class="proof-media fade-up">
+          <img src="https://static.wixstatic.com/media/bcaa19_0f079f4e143b4b36b7adcd70cc4689bf~mv2.jpg" alt="Mauricio Robbins entering the cockpit before the Sonoma race" loading="lazy" decoding="async">
+        </div>
+        <div class="proof-content fade-up d1">
+          <div class="split-text">
+            <div class="eyebrow">Race Proof</div>
+            <h2 class="sec-title"><span class="accent">Podium</span> Proof</h2>
+            <p class="sec-lead">Mauricio's podium at <strong>Sonoma</strong> marked an important proof point in his development as a formula driver.</p>
+            <p class="sec-lead">It showed speed, composure, tire management, qualifying execution, and the ability to perform under pressure.</p>
+          </div>
+          <div class="result-card">
+            <div class="rc-tag">Race Result</div>
+            <div class="rc-pos">3<sup>RD</sup></div>
+            <div class="rc-sub">FPUSA-4 &middot; Round 3</div>
+            <dl class="result-meta">
+              <div><dt>Circuit</dt><dd>Sonoma Raceway</dd></div>
+              <div><dt>Team</dt><dd>Kiwi Motorsport</dd></div>
+              <div><dt>Layout</dt><dd>2.52 mi &middot; 11 turns</dd></div>
+              <div><dt>Date</dt><dd>April 26, 2026</dd></div>
+            </dl>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================ 5 · LADDER ================ -->
+  <section class="ladder" id="ladder" aria-label="The Motorsport Ladder">
+    <div class="container">
+      <div class="eyebrow fade-up">The Climb</div>
+      <h2 class="sec-title fade-up d1">The Ladder is Long.<br>The Value is <span class="accent">Entering Early.</span></h2>
+      <p class="sec-lead fade-up d2">The road to the top of motorsport is built step by step. Mauricio is at the stage where the right partner can have outsized impact &mdash; supporting the journey and becoming part of the story while it is still being written.</p>
+      <div class="timeline fade-up d3">
+        <div class="timeline-track">
+          <div class="node done">
+            <div class="node-dot"></div>
+            <span class="node-year">Foundation</span>
+            <span class="node-label">Karting</span>
+          </div>
+          <div class="node current">
+            <div class="node-dot"></div>
+            <span class="node-year">2026</span>
+            <span class="node-label">Formula 4-Level</span>
+            <span class="node-tag">You are here</span>
+          </div>
+          <div class="node">
+            <div class="node-dot"></div>
+            <span class="node-year">Target 2027</span>
+            <span class="node-label">Formula Regional</span>
+          </div>
+          <div class="node">
+            <div class="node-dot"></div>
+            <span class="node-year">Target</span>
+            <span class="node-label">Formula 3</span>
+          </div>
+          <div class="node">
+            <div class="node-dot"></div>
+            <span class="node-year">Target</span>
+            <span class="node-label">Formula 2</span>
+          </div>
+          <div class="node">
+            <div class="node-dot"></div>
+            <span class="node-year">Ambition</span>
+            <span class="node-label">Formula 1</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================ TESTIMONIALS ================ -->
+  <section class="testimonials" aria-label="Endorsements">
+    <div class="container">
+      <div class="testimonials-head fade-up">
+        <div class="eyebrow">Voices Around Mauricio</div>
+        <h2 class="sec-title">Coaches, <span class="accent">Family, Team</span></h2>
+        <p class="sec-lead">The team behind a young driver is the foundation of his rise. Endorsements forthcoming from the people closest to the program.</p>
+      </div>
+      <!-- TODO: replace placeholder copy with actual endorsement quotes -->
+      <div class="tm-grid">
+        <article class="tm-card placeholder fade-up">
+          <span class="placeholder-tag">Awaiting quote</span>
+          <span class="quote-mark" aria-hidden="true">&ldquo;</span>
+          <blockquote><span class="placeholder-text">Coaching endorsement to be supplied &mdash; one or two sentences from Jeff Bucknum about Mauricio's development, work ethic, or potential.</span></blockquote>
+          <cite>
+            <span class="name">Jeff Bucknum</span>
+            <span class="role">Ex-IndyCar &middot; Driver Coach</span>
+          </cite>
+        </article>
+        <article class="tm-card placeholder fade-up d1">
+          <span class="placeholder-tag">Awaiting quote</span>
+          <span class="quote-mark" aria-hidden="true">&ldquo;</span>
+          <blockquote><span class="placeholder-text">Coaching endorsement to be supplied &mdash; one or two sentences from Spencer Bucknum about Mauricio's racecraft or progress.</span></blockquote>
+          <cite>
+            <span class="name">Spencer Bucknum</span>
+            <span class="role">Ex-West Coast F4 Champion &middot; Coach</span>
+          </cite>
+        </article>
+        <article class="tm-card placeholder fade-up d2">
+          <span class="placeholder-tag">Awaiting quote</span>
+          <span class="quote-mark" aria-hidden="true">&ldquo;</span>
+          <blockquote><span class="placeholder-text">Family endorsement to be supplied &mdash; one or two sentences from Dr. Mario Robbins about his son's journey, commitment, or character.</span></blockquote>
+          <cite>
+            <span class="name">Dr. Mario Robbins</span>
+            <span class="role">Father &middot; Supporter</span>
+          </cite>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================ 6 · PARTNERS ================ -->
+  <section class="partners" id="partners" aria-label="Partner Opportunity">
+    <div class="container">
+      <div class="section-banner fade-up">
+        <img src="https://static.wixstatic.com/media/bcaa19_22b459e74a834a79a77aded7fe7eaee9~mv2.jpg" alt="Mauricio Robbins sponsor decal applied to the Kiwi Motorsport Formula 4 car" loading="lazy" decoding="async">
+      </div>
+      <div class="partners-intro fade-up d1">
+        <div class="eyebrow">For Brands &amp; Sponsors</div>
+        <h2 class="sec-title">Partner Before the <span class="accent">Breakout</span></h2>
+        <p class="sec-lead"><strong>Motorsport rewards brands that move early.</strong></p>
+        <p class="sec-lead">A partnership with Mauricio gives companies the opportunity to align with a rising American driver at a foundational stage of his career &mdash; when the story is still authentic, the access is direct, and the upside is meaningful.</p>
+        <p class="sec-lead">This is not a passive sponsorship. It is a <strong>content platform, a brand story, and a long-term association</strong> with ambition, independence, and performance.</p>
+      </div>
+
+      <div class="benefit-grid">
+        <article class="benefit fade-up">
+          <div class="benefit-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h18l-2.5-5H5.5L3 14z"/><circle cx="7" cy="17" r="2"/><circle cx="17" cy="17" r="2"/><path d="M8 9l1-3h6l1 3"/></svg>
+          </div>
+          <span class="benefit-num">01 / Visibility</span>
+          <h3>Brand Placement</h3>
+          <p>Car, suit, helmet, and full digital asset placement across the season.</p>
+        </article>
+        <article class="benefit fade-up d1">
+          <div class="benefit-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M10 9l5 3-5 3z" fill="currentColor"/></svg>
+          </div>
+          <span class="benefit-num">02 / Storytelling</span>
+          <h3>Content &amp; Series</h3>
+          <p>Race weekend storytelling, behind-the-scenes, and co-branded video series.</p>
+        </article>
+        <article class="benefit fade-up d2">
+          <div class="benefit-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="6" r="2.5"/><circle cx="18" cy="6" r="2.5"/><circle cx="12" cy="18" r="2.5"/><path d="M7.5 7.5L11 16M16.5 7.5L13 16"/></svg>
+          </div>
+          <span class="benefit-num">03 / Reach</span>
+          <h3>Social Integrations</h3>
+          <p>Co-branded content across Instagram and Facebook channels.</p>
+        </article>
+        <article class="benefit fade-up d3">
+          <div class="benefit-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l3 6 6 1-4.5 4.5L18 21l-6-3-6 3 1.5-6.5L3 10l6-1 3-6z"/></svg>
+          </div>
+          <span class="benefit-num">04 / Hospitality</span>
+          <h3>Paddock &amp; Activation</h3>
+          <p>VIP race weekends, client experiences, and product launch moments.</p>
+        </article>
+        <article class="benefit fade-up d3">
+          <div class="benefit-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 21V7l5-4 5 4v14"/><path d="M7 11h10M7 16h10"/></svg>
+          </div>
+          <span class="benefit-num">05 / Equity</span>
+          <h3>Narrative Ownership</h3>
+          <p>Long-term association with a rising motorsport story still being written.</p>
+        </article>
+      </div>
+
+      <div class="cta-row fade-up">
+        <a href="#contact" class="btn btn-primary">Request Partnership Proposal <span class="arrow" aria-hidden="true">&rarr;</span></a>
+        <a href="#contact" class="btn btn-secondary">Own the Origin Story</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================ 7 · MORE THAN A LOGO ================ -->
+  <section class="ecosystem" aria-label="More Than a Logo">
+    <div class="container">
+      <div class="section-banner fade-up">
+        <img src="https://static.wixstatic.com/media/bcaa19_8d7ec1b1f4e0414caf207a9839fe2076~mv2.jpg" alt="Driver briefing with the Kiwi Motorsport engineering team" loading="lazy" decoding="async">
+      </div>
+      <div class="partners-intro fade-up d1">
+        <div class="eyebrow">Content Ecosystem</div>
+        <h2 class="sec-title">More Than a <span class="accent">Logo</span></h2>
+        <p class="sec-lead"><strong>Modern motorsport sponsorship is not just about visibility.</strong></p>
+        <p class="sec-lead">It is about giving brands a role in the story. Mauricio's platform can be built into a premium content ecosystem: race-weekend recaps, behind-the-scenes garage access, training moments, engineering breakdowns, sponsor integrations, and cinematic storytelling.</p>
+        <p class="sec-lead">Partners do not just appear on the car. <strong>They help power the climb.</strong></p>
+      </div>
+
+      <div class="format-grid fade-up d2">
+        <div class="format"><span class="format-num">F-01</span><span class="format-name">Race Week with Mauricio</span><span class="format-tag">Episodic / weekly</span><span class="format-status dev">In development</span></div>
+        <div class="format"><span class="format-num">F-02</span><span class="format-name">Inside the Garage</span><span class="format-tag">Documentary / BTS</span><span class="format-status dev">In development</span></div>
+        <div class="format"><span class="format-num">F-03</span><span class="format-name">Data to Lap Time</span><span class="format-tag">Engineering breakdown</span><span class="format-status">Concept</span></div>
+        <div class="format"><span class="format-num">F-04</span><span class="format-name">The Road to the Ladder</span><span class="format-tag">Long-form narrative</span><span class="format-status">Concept</span></div>
+        <div class="format"><span class="format-num">F-05</span><span class="format-name">Partner Performance Stories</span><span class="format-tag">Co-branded</span><span class="format-status">Concept</span></div>
+        <div class="format"><span class="format-num">F-06</span><span class="format-name">Sonoma Podium Recap</span><span class="format-tag">Result spotlight</span><span class="format-status dev">In production</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================ 8 · FINAL CTA + FORM (split, no bg image) ================ -->
+  <section class="final emotional" id="contact" aria-label="Join the Journey">
+    <div class="container">
+      <div class="final-grid">
+        <div class="final-text fade-up">
+          <div class="eyebrow">The Invitation</div>
+          <h2 class="sec-title">Join the <span class="accent">Journey</span> Early</h2>
+          <p class="sec-lead">Every driver's rise is powered by talent, timing, and the people who believe before everyone else does.</p>
+          <p class="sec-lead"><strong>Mauricio Robbins is building the foundation now.</strong></p>
+          <div class="cta-row">
+            <a href="#inquiry" class="btn btn-primary">Become a Partner <span class="arrow" aria-hidden="true">&rarr;</span></a>
+            <a href="#media" class="btn btn-secondary">Sponsorship Deck</a>
+          </div>
+        </div>
+
+        <!-- TODO: replace action with real form service endpoint (Formspree, Tally, etc.) -->
+        <form id="inquiry" class="inquiry-form fade-up d1" action="https://formspree.io/f/PLACEHOLDER_FORM_ID" method="POST">
+          <h3>Partnership Inquiry</h3>
+          <div class="form-hint">We respond within 48 hours</div>
+          <div class="form-row two">
+            <div class="field">
+              <label for="f-name">Name</label>
+              <input id="f-name" name="name" type="text" autocomplete="name" required>
+            </div>
+            <div class="field">
+              <label for="f-company">Company</label>
+              <input id="f-company" name="company" type="text" autocomplete="organization" required>
+            </div>
+          </div>
+          <div class="form-row two">
+            <div class="field">
+              <label for="f-email">Email</label>
+              <input id="f-email" name="email" type="email" autocomplete="email" required>
+            </div>
+            <div class="field">
+              <label for="f-interest">Interest</label>
+              <select id="f-interest" name="interest">
+                <option>Brand placement</option>
+                <option>Content series</option>
+                <option>Hospitality / activation</option>
+                <option>Long-term partnership</option>
+                <option>Other</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="field">
+              <label for="f-message">Message</label>
+              <textarea id="f-message" name="message" rows="4" placeholder="What kind of partnership are you exploring?"></textarea>
+            </div>
+          </div>
+          <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
+          <button type="submit" class="btn btn-primary">Send Inquiry <span class="arrow" aria-hidden="true">&rarr;</span></button>
+          <p class="form-note">Or email <a href="mailto:marketing@mauriciorobbins.com">marketing@mauriciorobbins.com</a></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================ MEDIA KIT ================ -->
+  <section class="media tight" id="media" aria-label="Press and Media Kit">
+    <div class="container">
+      <div class="partners-intro fade-up">
+        <div class="eyebrow">Press &amp; Media</div>
+        <h2 class="sec-title">Media <span class="accent">Kit</span></h2>
+        <p class="sec-lead">High-resolution assets, biography, and press materials. Currently being assembled &mdash; reach out for early access.</p>
+      </div>
+      <!-- TODO: wire each card to its real download URL and remove .coming-soon state -->
+      <div class="media-grid fade-up d1">
+        <div class="media-card"><span class="mc-label"><span class="mc-type">PDF</span><span class="mc-name">Short Bio</span></span><span class="mc-status">Coming Soon</span></div>
+        <div class="media-card"><span class="mc-label"><span class="mc-type">PDF</span><span class="mc-name">Long Bio</span></span><span class="mc-status">Coming Soon</span></div>
+        <div class="media-card"><span class="mc-label"><span class="mc-type">ZIP</span><span class="mc-name">Headshots</span></span><span class="mc-status">Coming Soon</span></div>
+        <div class="media-card"><span class="mc-label"><span class="mc-type">ZIP</span><span class="mc-name">Car Photos</span></span><span class="mc-status">Coming Soon</span></div>
+        <div class="media-card"><span class="mc-label"><span class="mc-type">ZIP</span><span class="mc-name">Garage Photos</span></span><span class="mc-status">Coming Soon</span></div>
+        <div class="media-card"><span class="mc-label"><span class="mc-type">ZIP</span><span class="mc-name">Logo &amp; Wordmark</span></span><span class="mc-status">Coming Soon</span></div>
+      </div>
+      <div class="cta-row fade-up d2">
+        <a href="mailto:marketing@mauriciorobbins.com?subject=Press%20Kit%20Request" class="btn btn-secondary">Request Early Access &rarr;</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="f-brand">
+        <a href="#" class="brand"><span class="dot" aria-hidden="true"></span><span>M&middot;R</span></a>
+        <p>The next generation of American motorsport. Racing the 2026 Formula Pro USA Championship with Kiwi Motorsport.</p>
+        <div class="f-socials">
+          <a href="https://www.instagram.com/mauriciorobbins_/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+          <a href="https://www.facebook.com/profile.php?id=61589331160721" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M22 12a10 10 0 1 0-11.56 9.88v-6.99H7.9V12h2.54V9.8c0-2.51 1.49-3.89 3.78-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56V12h2.77l-.44 2.89h-2.33v6.99A10 10 0 0 0 22 12z"/></svg></a>
+        </div>
+      </div>
+      <div class="f-col">
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="#story">Story</a></li>
+          <li><a href="#proof">Race Proof</a></li>
+          <li><a href="#ladder">The Ladder</a></li>
+          <li><a href="#partners">Partners</a></li>
+          <li><a href="#media">Media Kit</a></li>
+        </ul>
+      </div>
+      <div class="f-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="mailto:marketing@mauriciorobbins.com">marketing@mauriciorobbins.com</a></li>
+          <li><a href="https://www.instagram.com/kiwimotorsportnz/" target="_blank" rel="noopener">@kiwimotorsportnz</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="f-bottom">
+      <span>&copy; 2026 Mauricio Robbins Racing</span>
+      <span>Kiwi Motorsport &middot; FPUSA 2026 &middot; Built for the climb</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  if(!('IntersectionObserver' in window))return;
+  var io=new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      if(e.isIntersecting){
+        e.target.classList.add('in-view');
+        io.unobserve(e.target);
+      }
+    });
+  },{threshold:.12,rootMargin:'0px 0px -60px 0px'});
+  document.querySelectorAll('.fade-up').forEach(function(el){io.observe(el)});
+})();
+</script>
+
+</body>
+</html>
